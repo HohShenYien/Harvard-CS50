@@ -1,4 +1,4 @@
-##This folder contains problem set 1
+## This folder contains problem set 1
 Below I will mention some notable challenges I encounter when solving the problems
 
 1. **credit.c**
