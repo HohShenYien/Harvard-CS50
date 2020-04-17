@@ -14,3 +14,6 @@ Below I will mention some notable challenges I encounter when solving the proble
 ```
   if (argc == 2)
 ```
+3. **substition.c**
+* This problem is actually quite similar to the previous problem. However, it requires me to know about hashmap. This makes me wonder if 
+  the solvers are expected to have knowledge on hashmap to solve. Overall, this question is around medium to easy for me.
