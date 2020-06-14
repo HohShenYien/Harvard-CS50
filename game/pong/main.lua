@@ -214,7 +214,7 @@ function love.update(dt)
     else
         player1.dy = 0
     end
-
+    -- Commented out all the original control of player 2
     -- player 2 movement
     --if love.keyboard.isDown('up') then
       --  player2.dy = -PADDLE_SPEED
@@ -223,6 +223,7 @@ function love.update(dt)
     --else
       --  player2.dy = 0
     --end
+    -- Only carries out prediction if ball is going to the right side
     if ball.dx > 0 then
         theAI:checkUpDown(dt)
     end
