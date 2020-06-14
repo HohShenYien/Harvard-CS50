@@ -10,3 +10,5 @@ Below I will mention some notable challenges I encounter when solving the proble
     file downloaded from github with the one provided by CS50, problem solves.
   * Other than those, pong is quite fun to write, the whole lua language felt like cleaner and simpler than using pygame, but 
     with some experience, I believe recreating this pong game in either pygame or love2d is quite simple.
+  * PS: I plan to upgrade some features in this game as well in these few days, maybe after making the upgraded version of pokedex
+    or maybe after finishing the web track.
