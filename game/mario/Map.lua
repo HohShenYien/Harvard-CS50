@@ -248,14 +248,18 @@ function Map:render()
     self.player:render()
 end
 
+-- A function to check if the player has reached the flag pole
 function Map:checkWin(dt)
     if self.player.x >= (self.mapWidth - END_WIDTH + PYRAMID_HEIGHT + 3) * self.tileWidth then
+        -- Change the music in the end
         love.audio.stop(self.music)
         self.winSound:play()
+        -- Change player state and display a string
         self.player.state = 'win'
         string = "You won! Press enter to next level!"
     end
     if love.keyboard.isDown('return') then
+        -- Start new game
         newGame()
         love.audio.stop(self.winSound)
     end
