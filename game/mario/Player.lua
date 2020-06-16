@@ -176,7 +176,7 @@ function Player:init(map)
             self.dx = 0
             self.dy = 0
             self.x = (self.map.mapWidth - END_WIDTH + PYRAMID_HEIGHT + 3) * self.map.tileWidth
-            -- Slide down the pole slowly
+            -- Slide down the pole slowly until it reaches the ground
             if self.map:collides(self.map:tileAt(self.x, self.y + self.height)) or
                 self.map:collides(self.map:tileAt(self.x + self.width - 1, self.y + self.height)) then
                     self.y = self.y
