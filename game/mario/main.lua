@@ -79,9 +79,12 @@ function love.keypressed(key)
 
     love.keyboard.keysPressed[key] = true
 end
+
+-- Restart at end
 function newGame()
     map = Map()
 end
+
 -- called whenever a key is released
 function love.keyreleased(key)
     love.keyboard.keysReleased[key] = true
