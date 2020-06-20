@@ -1,4 +1,4 @@
-## This folder contains problem set in Android Tract
+## This folder contains problem set in Android Track
 Below I will mention some notable challenges I encounter when solving the problems
 
 1. **Pokedex**
