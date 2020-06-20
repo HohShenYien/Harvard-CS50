@@ -6,10 +6,14 @@ Below I will mention some notable challenges I encounter when solving the proble
     ) To be honest, I felt like giving up right here at Pokedex because I don't really get all the adapter viewHolder xml intent 
     stuff (I am still not very familiar with it) at first in the first video especially and also in the second video. 
     So I went to some Udemy and Youtube tutorials before proceeding.
-  * After some sufficient understandings, things getting clearer and I am able to work it out. I have described my understandings
-    to the codes in my code, feel free to check. Overall I am still confused on how API query works. This is because I had to 
-    nest the second query in the first in one of the function to call for the description of the pokemon, I will research more 
-    about this in future.
+  * After some sufficient understandings, things getting clearer and I am able to work it out. I have described my 
+    understandingsto the codes in my code, feel free to check. Overall I am still confused on how API query works. This is 
+    because I had to nest the second query in the first in one of the function to call for the description of the pokemon, I 
+    will research more about this in future.
+  * Update: I have cleared my own doubt: the second request is nested because the first request requires some time before
+    finishing the request. If the second request is not nested, the url will not be updated with the correct id, thus getting
+    incorrect link for the second request. Another way to solve this problem is to add a while loop that waits for first
+    request to finish before the second request.
     
 2. **Fiftygram**
   * Suddenly everything becomes easier here. Just need to learn how to open gallery, save and run some functons to modify bitmaps.
