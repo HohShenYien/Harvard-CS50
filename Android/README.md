@@ -14,6 +14,8 @@ Below I will mention some notable challenges I encounter when solving the proble
     finishing the request. If the second request is not nested, the url will not be updated with the correct id, thus getting
     incorrect link for the second request. Another way to solve this problem is to add a while loop that waits for first
     request to finish before the second request.
+  * Update2: Using a while loop is a disaster! It eats up all the memory causing the asynctask from volley doesn't load at 
+    all! So a better way is to make the second request a function and call it in the end of the first request.
     
 2. **Fiftygram**
   * Suddenly everything becomes easier here. Just need to learn how to open gallery, save and run some functons to modify bitmaps.
