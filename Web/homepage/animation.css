@@ -1,0 +1,82 @@
+@keyframes move_hand{
+    0%{
+        transform: rotate(20deg);
+        top:40px;
+    }
+
+    50%{
+        transform: rotate(140deg);
+        top:10px;
+    }
+}
+
+body{
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:2em;
+    margin: 1em;
+    border: 1px solid grey;
+}
+.absolute{
+    position: absolute;
+}
+
+#head{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: bisque;
+    left: 80px;
+}
+
+#container{
+    width: 200px;
+    height: 200px;
+    background-color: honeydew;
+    position: relative;
+}
+
+#body{
+    width:50px;
+    height: 90px;
+    background-color: cyan;
+    top: 40px;
+    left:75px;
+}
+#left-hand{
+    width:20px;
+    height:60px;
+    background-color: bisque;
+    transform: rotate(20deg);
+    left:50px;
+    top:40px;
+    animation-name:move_hand;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+#right-hand{
+    width:20px;
+    height:60px;
+    background-color: bisque;
+    transform: rotate(-20deg);
+    right:50px;
+    top:40px;
+}
+#left-leg{
+    width:20px;
+    height:70px;
+    background-color: bisque;
+    transform: rotate(20deg);
+    left:60px;
+    bottom:0px;
+}
+#right-leg{
+    width:20px;
+    height:70px;
+    background-color: bisque;
+    transform: rotate(-20deg);
+    right:60px;
+    bottom:0px
+}

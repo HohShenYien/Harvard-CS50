@@ -1,0 +1,42 @@
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+}
+
+#box{
+    border:10px solid blue;
+    background-color: fuchsia;
+    width:200px;
+    height:200px;
+    padding:20px;
+    margin:30px;
+}
+
+.color-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+}
+.bullet{
+    margin:0.5em;
+    width:10px;
+    height:10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+td{
+    padding:5px;
+
+}
+
+.center{
+    display:flex;
+    align-items: center;
+}

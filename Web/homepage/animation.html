@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>animation</title>
+        <link href="animation.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <h2>An example on animation</h2>
+        <p> To enable animation, use the following code: </p>
+        <pre>@keyframes move_hand{
+                0%{
+                    transform: rotate(20deg);
+                    top:40px;
+                }
+                17%{
+                    transform: rotate(60deg);
+                    top:30px;
+                }
+                35%{
+                    transform: rotate(100deg);
+                    top:20px;
+                }
+                50%{
+                    transform: rotate(140deg);
+                    top:10px;
+                }
+            }
+        </pre>
+
+        <div id="container">
+            <div id="head" class="absolute"></div>
+            <div id="left-hand" class="absolute"></div>
+            <div id="right-hand" class="absolute"></div>
+            <div id="body" class="absolute"></div>
+            <div id="left-leg" class="absolute"></div>
+            <div id="right-leg" class="absolute"></div>
+        </div>
+        <a href="index.html">Back to main</a>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+main {
+    background-color: blanchedalmond;
+    padding:1em;
+    border-radius: 1em;
+}
+.background{
+    background-color: coral;
+    max-width:780px;
+    max-height: 780px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin: 2em 0em 2em 0em;
+    padding:2em;
+    align-items: center;
+}
+
+.codes{
+    background-color: #d5d8dc;
+    padding:2px;
+}
+
+.blocks{
+    background-color: cyan;
+    margin:5px;
+    padding:5px;
+}
+
+#justify{
+    background-color: darkmagenta;
+    padding: 0em;
+}
+
+#wrap{
+    width:50%;
+}
