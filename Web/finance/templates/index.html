@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped table-hover table-hide">
+        <tr>
+            <th scope="col">Symbol</th>
+            <th scope="col">Name</th>
+            <th scope="col">Shares</th>
+            <th scope="col">Price</th>
+            <th scope="col">Total</th>
+        </tr>
+        {%for i in table %}
+        <tr>
+            <td>{{i["symbol"]}}</td>
+            <td>{{i["name"]}}</td>
+            <td>{{i["shares"]}}</td>
+            <td>{{i["price"]}}</td>
+            <td>{{i["total"]}}</td>
+        </tr>
+        {%endfor%}
+        <tr>
+            <td>CASH</td>
+            <td colspan="3"></td>
+            <td>{{cash}}</td>
+        </tr>
+        <tr>
+            <td colspan="4"> </td>
+            <td><b>{{total}}</b></td>
+        </tr>
+    </table>
+{% endblock %}

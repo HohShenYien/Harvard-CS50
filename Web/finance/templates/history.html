@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped table-hover table-hide">
+        <tr>
+            <th scope="col">Symbol</th>
+            <th scope="col">Name</th>
+            <th scope="col">Shares</th>
+            <th scope="col">Price</th>
+            <th scope="col">Transaction</th>
+        </tr>
+        {%for i in history %}
+        <tr>
+            <td>{{i["symbol"]}}</td>
+            <td>{{i["stock_name"]}}</td>
+            <td>{{i["shares"]}}</td>
+            <td>{{i["price"]}}</td>
+            <td>{{i["date"]}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+{% endblock %}
