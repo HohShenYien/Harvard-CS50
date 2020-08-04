@@ -12,6 +12,7 @@ This is my project on completing Harvard CS50 course.
 * The date of completion is the same as the date I posted them here.
 * There is a big gap between pset 3 and pset 4 due to my A2 examination in May, resumed after finishing the exam.
   
+* This is my final projectPomodoro Focus](https://github.com/HohShenYien/Pomodoro_Focus)
 ***
   P.S I didn't know much about github before my pset2, so some of the earlier projects were uploaded around that day.
   
